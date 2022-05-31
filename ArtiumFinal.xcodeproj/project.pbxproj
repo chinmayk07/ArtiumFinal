@@ -1,0 +1,977 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5804EDC72843D81400A80E29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5804EDC62843D81400A80E29 /* AppDelegate.swift */; };
+		5804EDCE2843D81400A80E29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5804EDCC2843D81400A80E29 /* Main.storyboard */; };
+		5804EDD02843D81700A80E29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5804EDCF2843D81700A80E29 /* Assets.xcassets */; };
+		5804EDD32843D81700A80E29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5804EDD12843D81700A80E29 /* LaunchScreen.storyboard */; };
+		5804EDE82843D81700A80E29 /* ArtiumFinalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5804EDE72843D81700A80E29 /* ArtiumFinalUITests.swift */; };
+		5804EDEA2843D81700A80E29 /* ArtiumFinalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5804EDE92843D81700A80E29 /* ArtiumFinalUITestsLaunchTests.swift */; };
+		5804EE082843DA5D00A80E29 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5804EE072843DA5D00A80E29 /* Product.swift */; };
+		5804EE0A2843DA8300A80E29 /* ProductDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5804EE092843DA8300A80E29 /* ProductDetails.swift */; };
+		5804EE0C2843DABD00A80E29 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5804EE0B2843DABD00A80E29 /* Login.swift */; };
+		5804EE0E2843DB8100A80E29 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5804EE0D2843DB8100A80E29 /* ProductListViewController.swift */; };
+		5804EE122843DBBB00A80E29 /* ProductListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5804EE102843DBBB00A80E29 /* ProductListTableViewCell.xib */; };
+		5804EE132843DBBB00A80E29 /* ProductListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5804EE112843DBBB00A80E29 /* ProductListTableViewCell.swift */; };
+		5804EE182843E58700A80E29 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5804EE172843E58700A80E29 /* Errors.swift */; };
+		5804EE1A2843E6A000A80E29 /* HTTPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5804EE192843E6A000A80E29 /* HTTPService.swift */; };
+		5804EE1C2843E6D100A80E29 /* ProductListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5804EE1B2843E6D100A80E29 /* ProductListService.swift */; };
+		5804EE1E2843E87900A80E29 /* ProductCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5804EE1D2843E87900A80E29 /* ProductCellViewModel.swift */; };
+		5804EE202843E89800A80E29 /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5804EE1F2843E89800A80E29 /* ProductListViewModel.swift */; };
+		5804EE222843FC7000A80E29 /* Designables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5804EE212843FC7000A80E29 /* Designables.swift */; };
+		5804EE242844004A00A80E29 /* ProductDetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5804EE232844004A00A80E29 /* ProductDetailService.swift */; };
+		5804EE262844018800A80E29 /* ProductDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5804EE252844018800A80E29 /* ProductDetailsViewModel.swift */; };
+		5804EE28284403D600A80E29 /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5804EE27284403D600A80E29 /* ProductDetailsViewController.swift */; };
+		5804EE2A2844042900A80E29 /* helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5804EE292844042900A80E29 /* helper.swift */; };
+		5804EE2C28441FFF00A80E29 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5804EE2B28441FFF00A80E29 /* LoginViewModel.swift */; };
+		5804EE2E2844202800A80E29 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5804EE2D2844202800A80E29 /* LoginViewController.swift */; };
+		5804EE342844355400A80E29 /* NoDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5804EE322844355400A80E29 /* NoDataTableViewCell.swift */; };
+		5804EE352844355400A80E29 /* NoDataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5804EE332844355400A80E29 /* NoDataTableViewCell.xib */; };
+		5804EE372844440200A80E29 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5804EE362844440200A80E29 /* Category.swift */; };
+		586803C528454C7D00E0FFCC /* ProductListModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586803C428454C7D00E0FFCC /* ProductListModelTests.swift */; };
+		586803C728454ED500E0FFCC /* MockAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586803C628454ED500E0FFCC /* MockAPIService.swift */; };
+		62BD6E950A2CA4DC0218FBE3 /* Pods_ArtiumFinalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0597C04E6E6A5B0210F764F4 /* Pods_ArtiumFinalTests.framework */; };
+		C7D844964A9E2CFA337AF963 /* Pods_ArtiumFinal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94F3F7C446F25C8C6791321 /* Pods_ArtiumFinal.framework */; };
+		C9F284921BC405952D1E519B /* Pods_ArtiumFinal_ArtiumFinalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57E26856D74A5F12B117CD93 /* Pods_ArtiumFinal_ArtiumFinalUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5804EDDA2843D81700A80E29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5804EDBB2843D81400A80E29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5804EDC22843D81400A80E29;
+			remoteInfo = ArtiumFinal;
+		};
+		5804EDE42843D81700A80E29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5804EDBB2843D81400A80E29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5804EDC22843D81400A80E29;
+			remoteInfo = ArtiumFinal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0597C04E6E6A5B0210F764F4 /* Pods_ArtiumFinalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArtiumFinalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F3BB2FC12DA20C1F222E450 /* Pods-ArtiumFinal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtiumFinal.debug.xcconfig"; path = "Target Support Files/Pods-ArtiumFinal/Pods-ArtiumFinal.debug.xcconfig"; sourceTree = "<group>"; };
+		45709823CA5BD425FFA35EB4 /* Pods-ArtiumFinal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtiumFinal.release.xcconfig"; path = "Target Support Files/Pods-ArtiumFinal/Pods-ArtiumFinal.release.xcconfig"; sourceTree = "<group>"; };
+		57E26856D74A5F12B117CD93 /* Pods_ArtiumFinal_ArtiumFinalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArtiumFinal_ArtiumFinalUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5804EDC32843D81400A80E29 /* ArtiumFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArtiumFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5804EDC62843D81400A80E29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5804EDCD2843D81400A80E29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5804EDCF2843D81700A80E29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5804EDD22843D81700A80E29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5804EDD42843D81700A80E29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5804EDD92843D81700A80E29 /* ArtiumFinalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtiumFinalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5804EDE32843D81700A80E29 /* ArtiumFinalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtiumFinalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5804EDE72843D81700A80E29 /* ArtiumFinalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtiumFinalUITests.swift; sourceTree = "<group>"; };
+		5804EDE92843D81700A80E29 /* ArtiumFinalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtiumFinalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5804EE072843DA5D00A80E29 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		5804EE092843DA8300A80E29 /* ProductDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetails.swift; sourceTree = "<group>"; };
+		5804EE0B2843DABD00A80E29 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		5804EE0D2843DB8100A80E29 /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+		5804EE102843DBBB00A80E29 /* ProductListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductListTableViewCell.xib; sourceTree = "<group>"; };
+		5804EE112843DBBB00A80E29 /* ProductListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListTableViewCell.swift; sourceTree = "<group>"; };
+		5804EE172843E58700A80E29 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		5804EE192843E6A000A80E29 /* HTTPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPService.swift; sourceTree = "<group>"; };
+		5804EE1B2843E6D100A80E29 /* ProductListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListService.swift; sourceTree = "<group>"; };
+		5804EE1D2843E87900A80E29 /* ProductCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCellViewModel.swift; sourceTree = "<group>"; };
+		5804EE1F2843E89800A80E29 /* ProductListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModel.swift; sourceTree = "<group>"; };
+		5804EE212843FC7000A80E29 /* Designables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Designables.swift; sourceTree = "<group>"; };
+		5804EE232844004A00A80E29 /* ProductDetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailService.swift; sourceTree = "<group>"; };
+		5804EE252844018800A80E29 /* ProductDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewModel.swift; sourceTree = "<group>"; };
+		5804EE27284403D600A80E29 /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewController.swift; sourceTree = "<group>"; };
+		5804EE292844042900A80E29 /* helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helper.swift; sourceTree = "<group>"; };
+		5804EE2B28441FFF00A80E29 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		5804EE2D2844202800A80E29 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5804EE322844355400A80E29 /* NoDataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoDataTableViewCell.swift; sourceTree = "<group>"; };
+		5804EE332844355400A80E29 /* NoDataTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoDataTableViewCell.xib; sourceTree = "<group>"; };
+		5804EE362844440200A80E29 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		586803C428454C7D00E0FFCC /* ProductListModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListModelTests.swift; sourceTree = "<group>"; };
+		586803C628454ED500E0FFCC /* MockAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIService.swift; sourceTree = "<group>"; };
+		82A50CFECF642912AAEFA9F3 /* Pods-ArtiumFinal-ArtiumFinalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtiumFinal-ArtiumFinalUITests.debug.xcconfig"; path = "Target Support Files/Pods-ArtiumFinal-ArtiumFinalUITests/Pods-ArtiumFinal-ArtiumFinalUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8A1FF75A49DC77D4008785DD /* Pods-ArtiumFinal-ArtiumFinalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtiumFinal-ArtiumFinalUITests.release.xcconfig"; path = "Target Support Files/Pods-ArtiumFinal-ArtiumFinalUITests/Pods-ArtiumFinal-ArtiumFinalUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A94F3F7C446F25C8C6791321 /* Pods_ArtiumFinal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArtiumFinal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA0F4845F84C3F17565E2619 /* Pods-ArtiumFinalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtiumFinalTests.debug.xcconfig"; path = "Target Support Files/Pods-ArtiumFinalTests/Pods-ArtiumFinalTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CCA56412FD99126DB4CDD35B /* Pods-ArtiumFinalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtiumFinalTests.release.xcconfig"; path = "Target Support Files/Pods-ArtiumFinalTests/Pods-ArtiumFinalTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5804EDC02843D81400A80E29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7D844964A9E2CFA337AF963 /* Pods_ArtiumFinal.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5804EDD62843D81700A80E29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62BD6E950A2CA4DC0218FBE3 /* Pods_ArtiumFinalTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5804EDE02843D81700A80E29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9F284921BC405952D1E519B /* Pods_ArtiumFinal_ArtiumFinalUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0CDEF6D72833A6F9D2BBDA18 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2F3BB2FC12DA20C1F222E450 /* Pods-ArtiumFinal.debug.xcconfig */,
+				45709823CA5BD425FFA35EB4 /* Pods-ArtiumFinal.release.xcconfig */,
+				82A50CFECF642912AAEFA9F3 /* Pods-ArtiumFinal-ArtiumFinalUITests.debug.xcconfig */,
+				8A1FF75A49DC77D4008785DD /* Pods-ArtiumFinal-ArtiumFinalUITests.release.xcconfig */,
+				BA0F4845F84C3F17565E2619 /* Pods-ArtiumFinalTests.debug.xcconfig */,
+				CCA56412FD99126DB4CDD35B /* Pods-ArtiumFinalTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5804EDBA2843D81400A80E29 = {
+			isa = PBXGroup;
+			children = (
+				5804EDC52843D81400A80E29 /* ArtiumFinal */,
+				5804EDDC2843D81700A80E29 /* ArtiumFinalTests */,
+				5804EDE62843D81700A80E29 /* ArtiumFinalUITests */,
+				5804EDC42843D81400A80E29 /* Products */,
+				0CDEF6D72833A6F9D2BBDA18 /* Pods */,
+				E3EB49FBEA0749A1D3E35F1A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5804EDC42843D81400A80E29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5804EDC32843D81400A80E29 /* ArtiumFinal.app */,
+				5804EDD92843D81700A80E29 /* ArtiumFinalTests.xctest */,
+				5804EDE32843D81700A80E29 /* ArtiumFinalUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5804EDC52843D81400A80E29 /* ArtiumFinal */ = {
+			isa = PBXGroup;
+			children = (
+				5804EDFA2843D86C00A80E29 /* Helpers */,
+				5804EDF92843D86300A80E29 /* Screens */,
+				5804EDF82843D83800A80E29 /* Service */,
+				5804EDC62843D81400A80E29 /* AppDelegate.swift */,
+				5804EDCC2843D81400A80E29 /* Main.storyboard */,
+				5804EDCF2843D81700A80E29 /* Assets.xcassets */,
+				5804EDD12843D81700A80E29 /* LaunchScreen.storyboard */,
+				5804EDD42843D81700A80E29 /* Info.plist */,
+			);
+			path = ArtiumFinal;
+			sourceTree = "<group>";
+		};
+		5804EDDC2843D81700A80E29 /* ArtiumFinalTests */ = {
+			isa = PBXGroup;
+			children = (
+				586803C428454C7D00E0FFCC /* ProductListModelTests.swift */,
+				586803C628454ED500E0FFCC /* MockAPIService.swift */,
+			);
+			path = ArtiumFinalTests;
+			sourceTree = "<group>";
+		};
+		5804EDE62843D81700A80E29 /* ArtiumFinalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5804EDE72843D81700A80E29 /* ArtiumFinalUITests.swift */,
+				5804EDE92843D81700A80E29 /* ArtiumFinalUITestsLaunchTests.swift */,
+			);
+			path = ArtiumFinalUITests;
+			sourceTree = "<group>";
+		};
+		5804EDF82843D83800A80E29 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5804EE192843E6A000A80E29 /* HTTPService.swift */,
+				5804EE1B2843E6D100A80E29 /* ProductListService.swift */,
+				5804EE232844004A00A80E29 /* ProductDetailService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		5804EDF92843D86300A80E29 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				5804EDFD2843D89800A80E29 /* ProductDetails */,
+				5804EDFC2843D87F00A80E29 /* Login */,
+				5804EDFB2843D87600A80E29 /* ProductList */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		5804EDFA2843D86C00A80E29 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5804EE172843E58700A80E29 /* Errors.swift */,
+				5804EE212843FC7000A80E29 /* Designables.swift */,
+				5804EE292844042900A80E29 /* helper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		5804EDFB2843D87600A80E29 /* ProductList */ = {
+			isa = PBXGroup;
+			children = (
+				5804EE062843D8DB00A80E29 /* ViewModel */,
+				5804EE052843D8D600A80E29 /* View */,
+				5804EE042843D8D100A80E29 /* Model */,
+			);
+			path = ProductList;
+			sourceTree = "<group>";
+		};
+		5804EDFC2843D87F00A80E29 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				5804EE032843D8C900A80E29 /* ViewModel */,
+				5804EE022843D8C400A80E29 /* View */,
+				5804EE012843D8BF00A80E29 /* Model */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		5804EDFD2843D89800A80E29 /* ProductDetails */ = {
+			isa = PBXGroup;
+			children = (
+				5804EE002843D8B700A80E29 /* ViewModel */,
+				5804EDFF2843D8B100A80E29 /* View */,
+				5804EDFE2843D8AB00A80E29 /* Model */,
+			);
+			path = ProductDetails;
+			sourceTree = "<group>";
+		};
+		5804EDFE2843D8AB00A80E29 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5804EE092843DA8300A80E29 /* ProductDetails.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5804EDFF2843D8B100A80E29 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5804EE27284403D600A80E29 /* ProductDetailsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5804EE002843D8B700A80E29 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5804EE252844018800A80E29 /* ProductDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5804EE012843D8BF00A80E29 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5804EE0B2843DABD00A80E29 /* Login.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5804EE022843D8C400A80E29 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5804EE2D2844202800A80E29 /* LoginViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5804EE032843D8C900A80E29 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5804EE2B28441FFF00A80E29 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5804EE042843D8D100A80E29 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5804EE072843DA5D00A80E29 /* Product.swift */,
+				5804EE362844440200A80E29 /* Category.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5804EE052843D8D600A80E29 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5804EE0F2843DB8600A80E29 /* Cell */,
+				5804EE0D2843DB8100A80E29 /* ProductListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5804EE062843D8DB00A80E29 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5804EE1D2843E87900A80E29 /* ProductCellViewModel.swift */,
+				5804EE1F2843E89800A80E29 /* ProductListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5804EE0F2843DB8600A80E29 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5804EE2F284434CA00A80E29 /* NodataCell */,
+				5804EE112843DBBB00A80E29 /* ProductListTableViewCell.swift */,
+				5804EE102843DBBB00A80E29 /* ProductListTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		5804EE2F284434CA00A80E29 /* NodataCell */ = {
+			isa = PBXGroup;
+			children = (
+				5804EE322844355400A80E29 /* NoDataTableViewCell.swift */,
+				5804EE332844355400A80E29 /* NoDataTableViewCell.xib */,
+			);
+			path = NodataCell;
+			sourceTree = "<group>";
+		};
+		E3EB49FBEA0749A1D3E35F1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A94F3F7C446F25C8C6791321 /* Pods_ArtiumFinal.framework */,
+				57E26856D74A5F12B117CD93 /* Pods_ArtiumFinal_ArtiumFinalUITests.framework */,
+				0597C04E6E6A5B0210F764F4 /* Pods_ArtiumFinalTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5804EDC22843D81400A80E29 /* ArtiumFinal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5804EDED2843D81700A80E29 /* Build configuration list for PBXNativeTarget "ArtiumFinal" */;
+			buildPhases = (
+				D228D04A5DB6DD7D82CF25E2 /* [CP] Check Pods Manifest.lock */,
+				5804EDBF2843D81400A80E29 /* Sources */,
+				5804EDC02843D81400A80E29 /* Frameworks */,
+				5804EDC12843D81400A80E29 /* Resources */,
+				32B3E55E6047622DAC73A397 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArtiumFinal;
+			productName = ArtiumFinal;
+			productReference = 5804EDC32843D81400A80E29 /* ArtiumFinal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5804EDD82843D81700A80E29 /* ArtiumFinalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5804EDF02843D81700A80E29 /* Build configuration list for PBXNativeTarget "ArtiumFinalTests" */;
+			buildPhases = (
+				975B473F20323212402589D6 /* [CP] Check Pods Manifest.lock */,
+				5804EDD52843D81700A80E29 /* Sources */,
+				5804EDD62843D81700A80E29 /* Frameworks */,
+				5804EDD72843D81700A80E29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5804EDDB2843D81700A80E29 /* PBXTargetDependency */,
+			);
+			name = ArtiumFinalTests;
+			productName = ArtiumFinalTests;
+			productReference = 5804EDD92843D81700A80E29 /* ArtiumFinalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5804EDE22843D81700A80E29 /* ArtiumFinalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5804EDF32843D81700A80E29 /* Build configuration list for PBXNativeTarget "ArtiumFinalUITests" */;
+			buildPhases = (
+				2E8AC8DC7B5E4CAA077B1526 /* [CP] Check Pods Manifest.lock */,
+				5804EDDF2843D81700A80E29 /* Sources */,
+				5804EDE02843D81700A80E29 /* Frameworks */,
+				5804EDE12843D81700A80E29 /* Resources */,
+				835E2C57EB0AC14C64A5597E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5804EDE52843D81700A80E29 /* PBXTargetDependency */,
+			);
+			name = ArtiumFinalUITests;
+			productName = ArtiumFinalUITests;
+			productReference = 5804EDE32843D81700A80E29 /* ArtiumFinalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5804EDBB2843D81400A80E29 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					5804EDC22843D81400A80E29 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					5804EDD82843D81700A80E29 = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 5804EDC22843D81400A80E29;
+					};
+					5804EDE22843D81700A80E29 = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 5804EDC22843D81400A80E29;
+					};
+				};
+			};
+			buildConfigurationList = 5804EDBE2843D81400A80E29 /* Build configuration list for PBXProject "ArtiumFinal" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5804EDBA2843D81400A80E29;
+			productRefGroup = 5804EDC42843D81400A80E29 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5804EDC22843D81400A80E29 /* ArtiumFinal */,
+				5804EDD82843D81700A80E29 /* ArtiumFinalTests */,
+				5804EDE22843D81700A80E29 /* ArtiumFinalUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5804EDC12843D81400A80E29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5804EDD32843D81700A80E29 /* LaunchScreen.storyboard in Resources */,
+				5804EE122843DBBB00A80E29 /* ProductListTableViewCell.xib in Resources */,
+				5804EDD02843D81700A80E29 /* Assets.xcassets in Resources */,
+				5804EDCE2843D81400A80E29 /* Main.storyboard in Resources */,
+				5804EE352844355400A80E29 /* NoDataTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5804EDD72843D81700A80E29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5804EDE12843D81700A80E29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E8AC8DC7B5E4CAA077B1526 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ArtiumFinal-ArtiumFinalUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		32B3E55E6047622DAC73A397 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ArtiumFinal/Pods-ArtiumFinal-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ArtiumFinal/Pods-ArtiumFinal-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ArtiumFinal/Pods-ArtiumFinal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		835E2C57EB0AC14C64A5597E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ArtiumFinal-ArtiumFinalUITests/Pods-ArtiumFinal-ArtiumFinalUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ArtiumFinal-ArtiumFinalUITests/Pods-ArtiumFinal-ArtiumFinalUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ArtiumFinal-ArtiumFinalUITests/Pods-ArtiumFinal-ArtiumFinalUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		975B473F20323212402589D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ArtiumFinalTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D228D04A5DB6DD7D82CF25E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ArtiumFinal-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5804EDBF2843D81400A80E29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5804EE242844004A00A80E29 /* ProductDetailService.swift in Sources */,
+				5804EE132843DBBB00A80E29 /* ProductListTableViewCell.swift in Sources */,
+				5804EE082843DA5D00A80E29 /* Product.swift in Sources */,
+				5804EE0E2843DB8100A80E29 /* ProductListViewController.swift in Sources */,
+				5804EE2E2844202800A80E29 /* LoginViewController.swift in Sources */,
+				5804EE0A2843DA8300A80E29 /* ProductDetails.swift in Sources */,
+				5804EE1A2843E6A000A80E29 /* HTTPService.swift in Sources */,
+				5804EE2A2844042900A80E29 /* helper.swift in Sources */,
+				5804EE1C2843E6D100A80E29 /* ProductListService.swift in Sources */,
+				5804EE2C28441FFF00A80E29 /* LoginViewModel.swift in Sources */,
+				5804EE202843E89800A80E29 /* ProductListViewModel.swift in Sources */,
+				5804EE372844440200A80E29 /* Category.swift in Sources */,
+				5804EE0C2843DABD00A80E29 /* Login.swift in Sources */,
+				5804EDC72843D81400A80E29 /* AppDelegate.swift in Sources */,
+				5804EE182843E58700A80E29 /* Errors.swift in Sources */,
+				5804EE262844018800A80E29 /* ProductDetailsViewModel.swift in Sources */,
+				5804EE342844355400A80E29 /* NoDataTableViewCell.swift in Sources */,
+				5804EE222843FC7000A80E29 /* Designables.swift in Sources */,
+				5804EE1E2843E87900A80E29 /* ProductCellViewModel.swift in Sources */,
+				5804EE28284403D600A80E29 /* ProductDetailsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5804EDD52843D81700A80E29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				586803C728454ED500E0FFCC /* MockAPIService.swift in Sources */,
+				586803C528454C7D00E0FFCC /* ProductListModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5804EDDF2843D81700A80E29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5804EDE82843D81700A80E29 /* ArtiumFinalUITests.swift in Sources */,
+				5804EDEA2843D81700A80E29 /* ArtiumFinalUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5804EDDB2843D81700A80E29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5804EDC22843D81400A80E29 /* ArtiumFinal */;
+			targetProxy = 5804EDDA2843D81700A80E29 /* PBXContainerItemProxy */;
+		};
+		5804EDE52843D81700A80E29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5804EDC22843D81400A80E29 /* ArtiumFinal */;
+			targetProxy = 5804EDE42843D81700A80E29 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5804EDCC2843D81400A80E29 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5804EDCD2843D81400A80E29 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5804EDD12843D81700A80E29 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5804EDD22843D81700A80E29 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5804EDEB2843D81700A80E29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5804EDEC2843D81700A80E29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5804EDEE2843D81700A80E29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F3BB2FC12DA20C1F222E450 /* Pods-ArtiumFinal.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JD9FMF3DCU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ArtiumFinal/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chinmaykhot.ArtiumFinal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5804EDEF2843D81700A80E29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45709823CA5BD425FFA35EB4 /* Pods-ArtiumFinal.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JD9FMF3DCU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ArtiumFinal/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chinmaykhot.ArtiumFinal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5804EDF12843D81700A80E29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA0F4845F84C3F17565E2619 /* Pods-ArtiumFinalTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JD9FMF3DCU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chinmaykhot.ArtiumFinalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArtiumFinal.app/ArtiumFinal";
+			};
+			name = Debug;
+		};
+		5804EDF22843D81700A80E29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCA56412FD99126DB4CDD35B /* Pods-ArtiumFinalTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JD9FMF3DCU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chinmaykhot.ArtiumFinalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArtiumFinal.app/ArtiumFinal";
+			};
+			name = Release;
+		};
+		5804EDF42843D81700A80E29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82A50CFECF642912AAEFA9F3 /* Pods-ArtiumFinal-ArtiumFinalUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JD9FMF3DCU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chinmaykhot.ArtiumFinalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ArtiumFinal;
+			};
+			name = Debug;
+		};
+		5804EDF52843D81700A80E29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A1FF75A49DC77D4008785DD /* Pods-ArtiumFinal-ArtiumFinalUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JD9FMF3DCU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chinmaykhot.ArtiumFinalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ArtiumFinal;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5804EDBE2843D81400A80E29 /* Build configuration list for PBXProject "ArtiumFinal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5804EDEB2843D81700A80E29 /* Debug */,
+				5804EDEC2843D81700A80E29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5804EDED2843D81700A80E29 /* Build configuration list for PBXNativeTarget "ArtiumFinal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5804EDEE2843D81700A80E29 /* Debug */,
+				5804EDEF2843D81700A80E29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5804EDF02843D81700A80E29 /* Build configuration list for PBXNativeTarget "ArtiumFinalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5804EDF12843D81700A80E29 /* Debug */,
+				5804EDF22843D81700A80E29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5804EDF32843D81700A80E29 /* Build configuration list for PBXNativeTarget "ArtiumFinalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5804EDF42843D81700A80E29 /* Debug */,
+				5804EDF52843D81700A80E29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5804EDBB2843D81400A80E29 /* Project object */;
+}
